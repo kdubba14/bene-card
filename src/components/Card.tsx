@@ -32,14 +32,14 @@ export const Card = (props: CardProps) => {
   };
 
   return (
-    <div className="w-96 h-64 p-6 rounded-3xl text-white flex flex-col justify-between bg-cover bg-[url('/public/benepass-card-background.png')] shadow-[0_4px_6px_0px_#0000000D,0_10px_15px_0px_#0000001A]">
+    <div className="w-84 h-56 sm:w-96 sm:h-64 min-w-80 p-6 rounded-3xl text-white flex flex-col justify-between bg-cover bg-[url('/public/benepass-card-background.png')] shadow-[0_4px_6px_0px_#0000000D,0_10px_15px_0px_#0000001A]">
       <div className="flex justify-between">
         <img alt="logo" src="/benepass-logo-white.svg" />
-        <div className="py-1 px-3 text-brand-indigo-100 flex justify-center items-center rounded-2xl bg-white">
+        <div className="py-1 px-3 text-brand-indigo-100 font-medium flex justify-center items-center rounded-2xl bg-white">
           <h3>Virtual</h3>
         </div>
       </div>
-      <div className="flex gap-4">
+      <div className="flex gap-1 sm:gap-4">
         {!showDetails && <Display>••••</Display>}
         {shownNumber.map((num) => (
           <Display>{num}</Display>

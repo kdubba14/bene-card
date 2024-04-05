@@ -18,10 +18,10 @@ const App = () => {
   };
 
   return (
-    <div className="px-14 py-16">
+    <div className="px-6 py-8 sm:px-14 sm:py-16">
       <div>
         <Display>Flex card</Display>
-        <p className="text-xl mb-8">Used for pre-tax purchases</p>
+        <p className="text-lg sm:text-xl mb-8">Used for pre-tax purchases</p>
         <Card cardInfo={cardInfo} showDetails={showDetails} />
         <div className="flex items-center gap-3 mt-4">
           <input
